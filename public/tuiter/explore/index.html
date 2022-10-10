@@ -5,92 +5,535 @@
     <title>Explore</title>
     <link href="index.css"
           rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
 </head>
-<body class = "wd-background">
-<div class="wd-outer-border">
-    <div class="wd-wrap">
-            <input class="wd-input"placeholder="  🔍   Search Tuiter"/>
-            <a href="setting.html" class="float-right wd-setting">⚙️</a>
+<body class="wd-background">
+<div class = "container">
+    <div class ="row">
+        <div class = "col-2 mt-1 d-none d-lg-none d-xl-block d-xxl-block">
+            <div class="list-group mb-2">
+                <a href="index.html" class="list-group-item override-bs list-group-item-action">
+                    <i class="fa-brands fa-twitter text-white"></i></a>
+                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-home text-white"></i> Home</a>
+                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">
+                    <i class="fa fa-hashtag"></i> Explore</a>
+                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bell"></i> Notifications</a>
+                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-mail-bulk text-white"></i> Messages</a>
+                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bookmark text-white"></i> BookMarks</a>
+                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-list text-white"></i> Lists</a>
+                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-user text-white"></i> Profile</a>
+                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-dot-circle text-white"></i> More</a>
+            </div>
+            <button class="w-100 btn btn-primary rounded-pill">
+                Tweet
+            </button>
+        </div>
+        <div class = "col-1 mt-1 d-none d-md-none d-lg-block d-xl-none">
+            <div class="list-group mb-2 wd-background">
+                <a href="index.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa-brands fa-twitter text-white"></i></a>
+                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-home text-white"></i> </a>
+                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">
+                    <i class="fa fa-hashtag text-white"></i> </a>
+                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bell text-white"></i> </a>
+                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-mail-bulk text-white"></i> </a>
+                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bookmark text-white"></i> </a>
+                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-list text-white"></i> </a>
+                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-user text-white"></i> </a>
+                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-dot-circle text-white"></i> </a>
+            </div>
+            <button class="w-120 btn btn-primary rounded-pill">
+                Tweet
+            </button>
+        </div>
+        <div class = "col-2 mt-1 d-sm-block d-md-block d-lg-none">
+            <div class="list-group mb-2 wd-background">
+                <a href="index.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa-brands fa-twitter text-white"></i></a>
+                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-home text-white"></i> </a>
+                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">
+                    <i class="fa fa-hashtag text-white"></i> </a>
+                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bell text-white"></i> </a>
+                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-mail-bulk text-white"></i> </a>
+                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-bookmark text-white"></i> </a>
+                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-list text-white"></i> </a>
+                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-user text-white"></i> </a>
+                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">
+                    <i class="fa fa-dot-circle text-white"></i> </a>
+            </div>
+            <button class="w-100 btn btn-primary rounded-pill">
+                Tweet
+            </button>
+        </div>
+
+        <div class = "col-6 mt-1 d-none d-lg-none d-xl-block d-xxl-block">
+            <div class="wd-border">
+                <div class="row">
+                <div class="form col-10 ms-2">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">
+                </div>
+                <div class="col-1 ms-4"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>
+
+                </div>
+
+                <div class="mt-2 mb-0">
+                    <ul class="nav nav-tabs override-bs">
+                        <li class="nav-item">
+                            <a class="nav-link active override-bs" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wd-image">
+                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>
+                    <h3 class="wd-txt">SpaceX's Starship</h3>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy
+                                    to build Single Page Applications or SPAs</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">jQuery</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "col-7 mt-1 d-none d-md-none d-lg-block d-xl-none">
+            <div>
+                <div class="row">
+                    <div class="form col-11">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">
+                    </div>
+                    <div class="col-1"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>
+
+                </div>
+
+                <div class="mt-2 mb-0">
+                    <ul class="nav nav-tabs override-bs">
+                        <li class="nav-item">
+                            <a class="nav-link active override-bs" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wd-image">
+                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>
+                    <h3 class="wd-txt">SpaceX's Starship</h3>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy
+                                        to build Single Page Applications or SPAs</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">jQuery</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "col-4 mt-1 d-none d-lg-none d-xl-block d-xxl-block">
+            <ul class="list-group">
+                <li class="list-group-item override-bs override-bs1 fw-bold py-1 text-white">Who to follow</li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="80%" src="https://nerdysoft.com/wp-content/uploads/2021/11/java-14-1.svg"/>
+                        </div>
+                        <div class="col col-7">
+                            <div class="text-white">Java <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@Java</div>
+                        </div>
+                        <div class="col col-3">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="100%" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
+                        </div>
+                        <div class="col col-7">
+                            <div class="text-white">Relativity Space <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@relativityspace</div>
+                        </div>
+                        <div class="col col-3">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="100%" src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg"/>
+                        </div>
+                        <div class="col col-7">
+                            <div class="text-white">Virgin Galactic <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="col col-3">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/574px-NASA_logo.svg.png"/>
+                        </div>
+                        <div class="col col-7">
+                            <div class="text-white">NASA <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="col col-3">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>
+                        </div>
+                        <div class="col col-7">
+                            <div class="text-white">Tesla <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="col col-3">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class = "col-10 mt-1 d-sm-block d-md-block d-lg-none">
+            <div>
+                <div class="row">
+                    <div class="form col-11">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">
+                    </div>
+                    <div class="col-1"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>
+
+                </div>
+
+                <div class="mt-2 mb-2">
+                    <ul class="nav nav-tabs override-bs">
+                        <li class="nav-item">
+                            <a class="nav-link active override-bs" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link override-bs" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item d-none d-sm-none">
+                            <a class="nav-link override-bs" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wd-image">
+                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>
+                    <h3 class="wd-txt">SpaceX's Starship</h3>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy
+                                        to build Single Page Applications or SPAs</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs" >
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">jQuery</div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item override-bs">
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="text-secondary">Web Development</div>
+                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>
+                                    <div class="text-secondary">123K Tweets</div>
+                                </div>
+                                <div class="col col-2">
+                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col-4 mt-1 d-none d-md-none d-lg-block d-xl-none">
+            <ul class="list-group">
+                <li class="list-group-item override-bs override-bs1 fw-bold py-1 text-white">Who to follow</li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="160%" src="https://nerdysoft.com/wp-content/uploads/2021/11/java-14-1.svg"/>
+                        </div>
+                        <div class="col col-6">
+                            <div class="text-white">Java<i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@Java</div>
+                        </div>
+                        <div class="col col-4">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="160%" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>
+                        </div>
+                        <div class="col col-6">
+                            <div class="text-nowrap text-white">Relativity Space <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@relativityspace</div>
+                        </div>
+                        <div class="col col-4">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="160%" src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg"/>
+                        </div>
+                        <div class="col col-6">
+                            <div class="text-nowrap text-white">Virgin Galactic<i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="col col-4">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="160%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/574px-NASA_logo.svg.png"/>
+                        </div>
+                        <div class="col col-6">
+                            <div class="text-white">NASA <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="col col-4">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="list-group-item override-bs override-bs1">
+                    <div class="row">
+                        <div class="col col-2">
+                            <img class="rounded-circle" width="160%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>
+                        </div>
+                        <div class="col col-6">
+                            <div class="text-white">Tesla <i class="fa-solid fa-circle-check"></i></div>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="col col-4">
+                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
     </div>
-    <div>
-        <ul class="wd-border">
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#" class ="wd-tabs wd-current-tab">For you  </a>
-            </li>
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#"class="wd-tabs wd-underline">Trending  </a>
-            </li>
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#"class="wd-tabs wd-underline">COVID-19  </a>
-            </li>
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#"class="wd-tabs wd-underline">News  </a>
-            </li>
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#"class="wd-tabs wd-underline">Sports  </a>
-            </li>
-            <li class="wd-spacing wd-tabs-horizontal">
-                <a href="#"class="wd-tabs wd-underline">Entertainment  </a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <ul class="wd-trending">
-            <li class="wd-lower-line">
-                Trending in Science
-            </li>
-            <li class="wd-upper-line">
-                Startship
-            </li>
-            <li class="wd-lower-line">
-                55.5K Tweets
-            </li>
-        </ul>
-    </div>
-    <div>
-        <ul class="wd-trending wd-small-border">
-            <li class="wd-lower-line">
-                Sports · Trending
-            </li>
-            <li class="wd-upper-line">
-                Joe Rogan
-            </li>
-            <li class="wd-lower-line">
-                5,218 Tweets
-            </li>
-        </ul>
-    </div>
-    <div class="wd-downboarder">
-        <img class="float-right img"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-        <h5 class="wd-mid-line"> <span>᧖ The New York Times☑️</span><span class="wd-lower-line">· Yesterday</span></h5>
-        <h4 class="wd-mid-line">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h4>
-        <br><br><br><br>
-    </div>
-    <div class="wd-downboarder">
-        <img class="float-right img"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-        <h5 class="wd-lower-line">COVID-19 · LIVE</h5>
-        <h4 class="wd-mid-line">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h4>
-        <br><br><br><br>
-    </div>
-    <div class="wd-downboarder">
-        <img class="float-right img"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-        <h5 class="wd-mid-line"> <span>᧖ The New York Times☑️</span><span class="wd-lower-line">· Yesterday</span></h5>
-        <h4 class="wd-mid-line">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h4>
-        <br><br><br><br>
-    </div>
-    <div>
-        <ul class="wd-trending wd-small-border">
-            <li class="wd-lower-line">
-                Trending in United States
-            </li>
-            <li class="wd-upper-line">
-                Wonder Bread
-            </li>
-            <li class="wd-lower-line">
-                1,234 Tweets
-            </li>
-        </ul>
-    </div>
+
 </div>
 </body>
 </html>
