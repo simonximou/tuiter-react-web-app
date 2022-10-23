@@ -4,8 +4,8 @@ const ExploreComponent = () => {
     return(`
            <div class="row">
                     <div class="form col-11">
-                        <i class="fa fa-search"></i>
-                        <input type="text" class="form-control form-input rounded-pill" placeholder="   Search anything...">
+                        <i class="fa fa-search position-absolute mt-2 ms-2"></i>
+                        <input type="text" class=" form-control form-input rounded-pill" placeholder="    Search anything...">
                     </div>
                     <div class="col-1"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>
            </div>

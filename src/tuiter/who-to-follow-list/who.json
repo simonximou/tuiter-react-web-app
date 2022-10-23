@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 123,
+    "userName": "NASA",
+    "handle": "NASA",
+    "avatarIcon": "https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png"
+  },
+  {
+    "_id": 234,
+    "userName": "Tesla",
+    "handle": "tesla",
+    "avatarIcon": "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg"
+  },
+  {
+    "_id": 345,
+    "userName": "SpaceX",
+    "handle": "SpaceX",
+    "avatarIcon": "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg"
+  }
+]
