@@ -5,9 +5,7 @@ import { updateUser } from '../reducers/profile-reducer';
 import "./index.css"
 
 const EditProfile = () => {
-    // First, hold the profile data from the state
     const profile = useSelector((state) => state.profile);
-    // Then, modify the currProfile object
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [form, setForm] = useState({ ...profile, name: profile.firstName + ' ' + profile.lastName });
@@ -27,7 +25,7 @@ const EditProfile = () => {
         navigate('/tuiter/profile');
     };
 
-    function pad (n) {
+    function time(n) {
         return n >= 10 ? n : '0' + n;
     }
 
@@ -45,36 +43,36 @@ const EditProfile = () => {
                 <button type={'submit'} className={'btn btn-dark button-round'} onClick={ () => update()}>Save</button>
             </div>
             <div>
-                <img className="w-100 position-relative" height="300" src={`${profile.bannerPicture}`}/>
-                <img className="wd-profile-edit rounded-circle position-relative " height="150" width="150" src={`${profile.profilePicture}`}/>
+                <img className="w-100 position-relative" height="300" src={`${profile.bannerPicture}`} alt=""/>
+                <img className="wd-profile-edit rounded-circle position-relative " height="150" width="150" src={`${profile.profilePicture}`} alt=""/>
             </div>
-            <div className={'mb-5'}>
-                <div className={'wd-forms'}>
-                    <label className={'text-muted'}>Name</label>
+            <div className='mb-5'>
+                <div className='wd-forms'>
+                    <label className='text-secondary'>Name</label>
                     <input onChange={e => setForm({ ...form, name: e.target.value })} required value={form.name}/>
                 </div>
-                <div className={'wd-forms'}>
-                    <label className={'text-muted'}>Bio</label>
+                <div className='wd-forms'>
+                    <label className='text-secondary'>Bio</label>
                     <textarea onChange={e => setForm({ ...form, bio: e.target.value })} required value={form.bio}></textarea>
                 </div>
-                <div className={'wd-forms'}>
-                    <label className={'text-muted'}>Location</label>
+                <div className='wd-forms'>
+                    <label className='text-secondary'>Location</label>
                     <input onChange={e => setForm({ ...form, location: e.target.value })} required value={form.location}/>
                 </div>
-                <div className={'wd-forms'}>
-                    <label className={'text-muted'}>Website</label>
+                <div className='wd-forms'>
+                    <label className='text-secondary'>Website</label>
                     <input onChange={e => setForm({ ...form, website: e.target.value })} required value={form.website}/>
                 </div>
                 {
-                    editB ? <div className={'wd-forms'}>
-                        <label className={'text-muted'}>Birth Date</label>
+                    editB ? <div className='wd-forms'>
+                        <label className='text-secondary'>Birth Date</label>
                         <input onChange={e => setForm({ ...form, dateOfBirth: e.target.value })} required type={'date'}
-                               value={`${b.getFullYear()}-${pad(b.getMonth() + 1)}-${pad(b.getDate())}`}/>
+                               value={`${b.getFullYear()}-${time(b.getMonth() + 1)}-${time(b.getDate())}`}/>
                     </div> : <div>
                         <div>
-                            <span className={'text-muted'}>Birth date</span>
-                            <span className={'ms-2'}>&middot;</span>
-                            <button onClick={() => setEditB(true)} type={'button'} className={'btn btn-link'}>Edit</button>
+                            <span className='text-secondary'>Birth date</span>
+                            <span className='ms-2'>&middot;</span>
+                            <button onClick={() => setEditB(true)} type={'button'} className='btn btn-link'>Edit</button>
                         </div>
                         <div>{month_names[b.getMonth()]} {b.getDate()}, {b.getFullYear()}</div>
                     </div>
