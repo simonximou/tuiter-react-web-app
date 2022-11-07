@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+<<<<<<< Updated upstream
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +21,21 @@ function App() {
       </header>
     </div>
   );
+=======
+    return (
+        <BrowserRouter>
+            <div className="container">
+                <Routes>
+                    <Route path="/*" element={<Labs/>}/>
+                    <Route path="/hello"
+                           element={<HelloWorld/>}/>
+                    <Route path="/tuiter/*"
+                           element={<Tuiter/>}/>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
+>>>>>>> Stashed changes
 }
 
 export default App;

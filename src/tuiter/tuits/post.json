@@ -1,0 +1,31 @@
+[
+  {
+    "_id": 123,
+    "profileImg": "https://images.sk-static.com/images/media/profile_images/artists/5003643/huge_avatar",
+    "name": "Martin Garrix",
+    "userName": "@martingarrix",
+    "tuit":"super excited to share my first club album 'Sentio', which is out today including the final two tracks 'If We'll Ever Be Remembered' and 'Oxygen'!! i hope you like it and thank you to everybody involved in putting this together +x http://stmpd.co/SentioTW",
+    "time": "2h",
+    "title": "Martin Garrix will be joining Escape LA this year",
+    "image": "https://cdn.aspentimes.com/wp-content/uploads/sites/5/2018/01/bgarrix-atd-012618-2.jpg",
+    "summary":"Ohh yeah everyone please come to Escape this year. There will be 30+ DJs plus the joining of Martin Garrix.",
+    "liked": true,
+    "comment":99999,
+    "retuit":99999,
+    "likes":99999
+  },
+  {
+    "_id": 234,
+    "profileImg": "https://d.newsweek.com/en/full/1875419/onlyfans.png?w=1600&h=900&q=88&f=69582ff59eaa504d54304c24c80569d9",
+    "name": "Only Fans",
+    "userName": "@onlyfans",
+    "tuit":"Join OnlyFans today to ear up to 5 free subscribes to your favorite star. What are you waiting for?",
+    "time": "5h",
+    "title": "OnlyFans is going nuts",
+    "image": "https://cdn.thetealmango.com/wp-content/uploads/2022/07/maxresdefault-5.jpeg",
+    "summary":"Click to see join OnlyFans with CardiB",
+    "liked": false,
+    "comment":123,
+    "retuit":222,
+    "likes":5555
+  }]
