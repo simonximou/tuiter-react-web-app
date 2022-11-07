@@ -1,0 +1,27 @@
+export default [
+    {
+        profileImg: 'https://images.sk-static.com/images/media/profile_images/artists/5003643/huge_avatar',
+        name: 'Martin Garrix',
+        userName: 'martingarrix',
+        tuit:'Excited to be performing at Escape LA this year!',
+        time: '2h',
+        title: 'Martin Garrix will be joining Escape LA this year',
+        image: 'https://cdn.aspentimes.com/wp-content/uploads/sites/5/2018/01/bgarrix-atd-012618-2.jpg',
+        summary:'Ohh yeah everyone please come to Escape this year. There will be 30+ DJs plus the joining of Martin Garrix.',
+        comment:'1M+',
+        retuit:'1M+',
+        liked:'5M+',
+    },
+    {
+        profileImg: 'data:image/png;base64,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',
+        name: 'Only Fans',
+        userName: 'onlyfans',
+        tuit:'Join OnlyFans today to ear up to 5 free subscribes to your favorite star. What are you waiting for?',
+        time: '5h',
+        title: 'OnlyFans is going nuts',
+        image: 'https://cdn.thetealmango.com/wp-content/uploads/2022/07/maxresdefault-5.jpeg',
+        summary:'Click to see join OnlyFans with CardiB',
+        comment:'1050',
+        retuit:'222',
+        liked:'100k',
+    },];

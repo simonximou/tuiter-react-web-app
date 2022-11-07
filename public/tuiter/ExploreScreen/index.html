@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
+    <title>Explore screen</title>
+</head>
+<body>
+
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Explore</title>-->
+<!--    <link href="index.css"-->
+<!--          rel="stylesheet"/>-->
+<!--    <link href="../../vendors/bootstrap/css/bootstrap.min.css"-->
+<!--          rel="stylesheet"/>-->
+<!--    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"-->
+<!--          rel="stylesheet"/>-->
+<!--</head>-->
+<!--&lt;!&ndash;<body class="wd-background">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class = "container">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class ="row">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-2 mt-1 d-none d-lg-none d-xl-block d-xxl-block">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="list-group mb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa-brands fa-twitter text-white"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-home text-white"></i> Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-hashtag"></i> Explore</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bell"></i> Notifications</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-mail-bulk text-white"></i> Messages</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bookmark text-white"></i> BookMarks</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-list text-white"></i> Lists</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-user text-white"></i> Profile</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-dot-circle text-white"></i> More</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="w-100 btn btn-primary rounded-pill">&ndash;&gt;-->
+<!--&lt;!&ndash;                Tweet&ndash;&gt;-->
+<!--&lt;!&ndash;            </button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-1 mt-1 d-none d-md-none d-lg-block d-xl-none">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="list-group mb-2 wd-background">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa-brands fa-twitter text-white"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-home text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-hashtag text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bell text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-mail-bulk text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bookmark text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-list text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-user text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-dot-circle text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="w-120 btn btn-primary rounded-pill">&ndash;&gt;-->
+<!--&lt;!&ndash;                Tweet&ndash;&gt;-->
+<!--&lt;!&ndash;            </button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-2 mt-1 d-sm-block d-md-block d-lg-none">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="list-group mb-2 wd-background">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa-brands fa-twitter text-white"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../home.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-home text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="index.html" class="list-group-item override-bs list-group-item-action active text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-hashtag text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../notifications.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bell text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../messages.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-mail-bulk text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../bookmarks/index.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-bookmark text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../lists.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-list text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../profile.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-user text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="../more.html" class="list-group-item override-bs list-group-item-action text-white">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-dot-circle text-white"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="w-100 btn btn-primary rounded-pill">&ndash;&gt;-->
+<!--&lt;!&ndash;                Tweet&ndash;&gt;-->
+<!--&lt;!&ndash;            </button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class = "col-6 mt-1 d-none d-lg-none d-xl-block d-xxl-block">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="wd-border">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form col-10 ms-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="fa fa-search"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-1 ms-4"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="mt-2 mb-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="nav nav-tabs override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link active override-bs" href="#">For you</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Trending</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">News</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Sports</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Entertainment</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="wd-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3 class="wd-txt">SpaceX's Starship</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy&ndash;&gt;-->
+<!--&lt;!&ndash;                                    to build Single Page Applications or SPAs</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">jQuery</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-7 mt-1 d-none d-md-none d-lg-block d-xl-none">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form col-11">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="fa fa-search"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-1"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="mt-2 mb-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="nav nav-tabs override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link active override-bs" href="#">For you</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Trending</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">News</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Sports</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Entertainment</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="wd-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3 class="wd-txt">SpaceX's Starship</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy&ndash;&gt;-->
+<!--&lt;!&ndash;                                        to build Single Page Applications or SPAs</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">jQuery</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-4 mt-1 d-none d-lg-none d-xl-block d-xxl-block">&ndash;&gt;-->
+<!--&lt;!&ndash;            <ul class="list-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1 fw-bold py-1 text-white">Who to follow</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="80%" src="https://nerdysoft.com/wp-content/uploads/2021/11/java-14-1.svg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-7">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Java <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@Java</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="100%" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-7">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Relativity Space <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@relativityspace</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="100%" src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-7">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Virgin Galactic <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@virgingalactic</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/574px-NASA_logo.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-7">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">NASA <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@NASA</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-7">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Tesla <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@Tesla</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class = "col-10 mt-1 d-sm-block d-md-block d-lg-none">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="form col-11">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="fa fa-search"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" class="form-control override-bs form-input rounded-pill" placeholder="Search anything...">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-1"><a href="setting.html"><i class=" fa-solid fa-gear fa-2x"></i></a></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <div class="mt-2 mb-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="nav nav-tabs override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link active override-bs" href="#">For you</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Trending</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">News</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Sports</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="nav-item d-none d-sm-none">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a class="nav-link override-bs" href="#">Entertainment</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="wd-image">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img width="100%" src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h3 class="wd-txt">SpaceX's Starship</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ul class="list-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">ReactJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">React.js is a component based front end library that makes it very easy&ndash;&gt;-->
+<!--&lt;!&ndash;                                        to build Single Page Applications or SPAs</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">JavaScript is programming language that can run on browsers as well as desktops</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://www.computerhope.com/jargon/j/javascript.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs" >&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">jQuery</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img width="100%" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li class="list-group-item override-bs">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-10">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">Web Development</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="fw-bold text-white">NodeJS <i class="fa-solid fa-circle-check"></i> <span class="text-secondary fw-normal">- 2h</span></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="text-secondary">123K Tweets</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img class="rounded" width="100%" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class = "col-4 mt-1 d-none d-md-none d-lg-block d-xl-none">&ndash;&gt;-->
+<!--&lt;!&ndash;            <ul class="list-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1 fw-bold py-1 text-white">Who to follow</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="160%" src="https://nerdysoft.com/wp-content/uploads/2021/11/java-14-1.svg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Java<i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@Java</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="160%" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-nowrap text-white">Relativity Space <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@relativityspace</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="160%" src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-nowrap text-white">Virgin Galactic<i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@virgingalactic</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="160%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/574px-NASA_logo.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">NASA <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@NASA</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="list-group-item override-bs override-bs1">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img class="rounded-circle" width="160%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-white">Tesla <i class="fa-solid fa-circle-check"></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="text-secondary">@Tesla</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="col col-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <button class="rounded-pill btn btn-primary override-bs" width="100%">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--</html>-->
